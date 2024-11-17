@@ -1,0 +1,12 @@
+account_balance = 1500
+try:
+    withdraw_account = int(input("how much would you like to withdraw?"))
+    if (withdraw_account > account_balance):
+        print ("not enough money here get a job")
+    else:
+        account_balance -= withdraw_account
+except ValueError:
+    print("must input a  number value!")
+finally:
+    print (f'your balance is now: ${account_balance}')
+
